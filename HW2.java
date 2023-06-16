@@ -64,7 +64,7 @@ public class HW2 {
 
         String[] marksString = marks.toString().replace("{", "").split("}");
 
-        for(int i = 0; i < result.length; i++){
+        for(int i = 0; i < marksString.length; i++){
             System.out.println(result[0] + " " + marksString[i].substring(marksString[i].indexOf("=") + 1, marksString[i].indexOf(" ") - 1) + " "
                             + result[1] + " " + marksString[i].substring(marksString[i].indexOf("=", marksString[i].indexOf("=") + 1) + 1, marksString[i].indexOf(" ", marksString[i].indexOf(" ") + 1) - 1) + " "
                             + result[2] + " " + marksString[i].substring(marksString[i].lastIndexOf("=") + 1));

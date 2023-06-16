@@ -54,6 +54,10 @@ public class HW2 {
         pupil3.put("оценка","5");
         pupil3.put("предмет","Физика");
 
+        System.out.println(pupil1);
+        System.out.println(pupil2);
+        System.out.println(pupil3);
+
         String[] result = {"Студент", "получил", "по предмету"};
         StringBuilder marks = new StringBuilder(pupil1.toString());
         marks.append(pupil2.toString()).append(pupil3.toString());

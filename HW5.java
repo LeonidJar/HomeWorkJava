@@ -56,9 +56,9 @@ public class HW5 {
         for (String s: book.keySet()) name.add(s);
         for (String s: book.values()) phone.add(s);
         
-        for (int j = phone.size() - 1; j >= 1; j--){
-            for (int i = 0; i < j; i++){
-                if (phone.get(i).length() < phone.get(i + 1).length()){
+        for (int j = phone.size() - 1; j >= 1; j--) {
+            for (int i = 0; i < j; i++) {
+                if (phone.get(i).length() < phone.get(i + 1).length()) {
                     String tmp = phone.get(i);      
                     phone.set(i, phone.get(i + 1));       
                     phone.set(i + 1, tmp); 
